@@ -231,6 +231,7 @@
 // Responsive design
 $medium: 1163px;
 $small: 561px;
+$verySmall: 410px;
 
 @media screen and (max-width: $medium) {
   .logo,
@@ -301,5 +302,15 @@ $small: 561px;
   }
   .responsive_card_item {
     min-width: 250px;
+  }
+  .project_images img {
+    width: 217px;
+  }
+}
+
+// Very Small screen
+@media screen and (max-width: $verySmall) {
+  .background_color {
+    margin-left: 10%;
   }
 }
