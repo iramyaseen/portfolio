@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
-import NavbarsList from "./Navbars";
+import Footer from "./Components/Footer";
+import NavbarsList from "./Components/Navbars";
 import "./index.scss";
 
 const App = () => (
   <div className="App">
-    <NavbarsList />
+    <div className="background_color">
+      <NavbarsList />
+    </div>
+    <Footer />
   </div>
 );
 
