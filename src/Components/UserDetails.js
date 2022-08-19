@@ -8,7 +8,7 @@ const { Title } = Typography;
 
 function UserDetails() {
   return (
-    <div>
+    <div className="responsive_row">
       <Row className="user_details_div">
         <Col>
           <Title level={2} className="title_color">

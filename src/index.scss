@@ -45,18 +45,18 @@
   color: #c9c9c9 !important;
 }
 // Profile text and image style
-.logo {
-  width: 70px;
-  position: absolute;
-  top: 280px;
-  left: 180px;
-}
-.figma {
-  width: 70px;
-  position: absolute;
-  top: 180px;
-  left: 490px;
-}
+// .logo {
+//   width: 70px;
+//   position: absolute;
+//   top: 280px;
+//   left: 34%;
+// }
+// .figma {
+//   width: 70px;
+//   position: absolute;
+//   top: 180px;
+//   left: 46%;
+// }
 .anticon svg {
   width: 40px;
 }
@@ -306,11 +306,26 @@ $verySmall: 410px;
   .project_images img {
     width: 217px;
   }
+  .res_hire_me,
+  .get_touch {
+    width: 300px;
+  }
+  .responsive_row {
+    // background-color: red;
+    margin: 0%;
+  }
 }
-
 // Very Small screen
 @media screen and (max-width: $verySmall) {
   .background_color {
     margin-left: 10%;
+    margin-right: 10%;
+  }
+  .res_hire_me,
+  .get_touch {
+    max-width: 250px;
+  }
+  .text_description2 {
+    font-size: 17px !important;
   }
 }

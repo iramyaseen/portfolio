@@ -10,7 +10,12 @@ function Profile() {
   const [size, setSize] = useState("large");
   return (
     <>
-      <Row>
+      <Row
+        // style={{
+        //   margin: "0% auto",
+        // }}
+        className="responsive_row"
+      >
         <Space className="reponsive_design">
           <div>
             <Col className="image_col" flex={3}>
@@ -32,7 +37,7 @@ function Profile() {
                   <Col>
                     <Button size={size} className="hire_me res_hire_me">
                       Hire me
-                      <ArrowRightOutlined />
+                      {/* <ArrowRightOutlined width={"400px"} size={"400px"} /> */}
                     </Button>
                   </Col>
                   <Col className="res_btn_margin">
@@ -60,8 +65,8 @@ function Profile() {
         </Space>
       </Row>
       <UserDetails />
-      <img className="logo" src={image2} />
-      <img className="figma" src={image3} />
+      {/* <img className="logo" src={image2} />
+      <img className="figma" src={image3} /> */}
     </>
   );
 }
