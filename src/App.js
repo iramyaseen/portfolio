@@ -1,16 +1,35 @@
 import React from "react";
 import "./App.css";
-import Footer from "./Components/Footer";
-import NavbarsList from "./Components/Navbars";
 import "./index.scss";
+import Footeer from "./Footer";
+import NavbarsList from "./Navbars";
+import styled from "styled-components";
+const Container = styled.div``;
 
 const App = () => (
-  <div className="App">
-    <div className="background_color">
+  <Container style={{ background: "#2d2d2d" }}>
+    <Container>
       <NavbarsList />
-    </div>
-    <Footer />
-  </div>
+    </Container>
+    <Container
+      style={{
+        background: "#414141",
+        borderTopLeftRadius: "35px",
+        borderTopRightRadius: "35px",
+        fontSize: "20px",
+        paddingTop: "60px",
+        paddingBottom: "10px",
+        marginTop: "120px",
+      }}
+    >
+      <Footeer
+        footerStyle={{
+          marginLeft: "100px",
+          marginRight: "100px",
+        }}
+      />
+    </Container>
+  </Container>
 );
 
 export default App;

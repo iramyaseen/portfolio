@@ -1,17 +1,22 @@
 import { Layout, Menu } from "antd";
 import React from "react";
-import Profile from "../Components/ProfileText";
-const { Header, Content, Footer, Sider } = Layout;
+import Profile from "./Components/Profile";
+import Footeer from "./Footer";
+const { Header } = Layout;
+
 const items1 = ["About", "Portfolio", "Reference", "Contact"].map((key) => ({
   key,
   label: `${key}`,
   className: "item",
 }));
+const app = {
+  backgroundColor: "#2d2d2d",
+};
 
 const NavbarsList = () => (
-  <Layout>
-    <Header className="header">
-      <Menu className="menu" mode="horizontal" items={items1} />
+  <Layout style={app}>
+    <Header className="responsive_navbar">
+      <Menu mode="horizontal" items={items1} />
     </Header>
     <Profile />
   </Layout>
