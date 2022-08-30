@@ -1,9 +1,7 @@
 import { Layout, Menu } from "antd";
 import React from "react";
-import Profile from "./Components/Profile";
-import Footeer from "./Footer";
+import Profile from "./Pages/ProfilePage";
 const { Header } = Layout;
-
 const items1 = ["About", "Portfolio", "Reference", "Contact"].map((key) => ({
   key,
   label: `${key}`,

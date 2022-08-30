@@ -1,29 +1,24 @@
-import React, { useState } from "react";
-import { ReactComponent as Arrow } from "../src/Components/Arrow.svg";
-import { ReactComponent as PhoneCall } from "../src/Components/Phone.svg";
+import React from "react";
+import { ReactComponent as Arrow } from "../SVG Icons/Arrow.svg";
 import { Button, Card, Col, Row, Space, Typography } from "antd";
 import { PhoneFilled, PlusOutlined } from "@ant-design/icons";
 import styled from "styled-components";
-import Footeer from "./Footer";
 const { Title } = Typography;
 
 const Container = styled.div``;
 
 function SeeMore() {
-  const [size, setSize] = useState("large");
-
   return (
     <Container>
       <Row
         style={{
           marginLeft: "70px",
-          // marginRight: "100px",
           marginTop: "60px",
           marginBottom: "100px",
         }}
         className="responsive_text"
       >
-        <Container>
+        <Container className="margin_top">
           <Col>
             <Title className="see_more" style={{ color: "#C9C9C9" }} level={3}>
               See more
@@ -61,7 +56,7 @@ function SeeMore() {
                   paddingBottom: "5px",
                   width: "174px",
                 }}
-                size={size}
+                size="large"
               >
                 Dribbble
                 <Arrow />
@@ -72,7 +67,7 @@ function SeeMore() {
             <Col>
               <Button
                 className="responsive_hire_me_btn2 btn_margin"
-                size={size}
+                size="large"
                 style={{
                   border: "none",
                   outline: "none",
@@ -98,7 +93,7 @@ function SeeMore() {
             <Col>
               <Button
                 className="responsive_hire_me_btn2"
-                size={size}
+                size="large"
                 style={{
                   border: "none",
                   outline: "none",
@@ -123,7 +118,7 @@ function SeeMore() {
         </span>
       </Row>
 
-      <Row>
+      <Row className="margin__top">
         <Title style={{ color: "white", paddingBottom: "20px" }} level={2}>
           Reference
         </Title>
@@ -132,9 +127,8 @@ function SeeMore() {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          // marginRight: "100px",
         }}
-        className="responsive_text center"
+        className="responsive_text center center2"
       >
         <Card
           className="responsive_card"
@@ -159,7 +153,7 @@ function SeeMore() {
           </Title>
           <Col style={{ display: "flex" }}>
             <Button
-              size={size}
+              size="large"
               style={{
                 border: "none",
                 outline: "none",
@@ -221,7 +215,7 @@ function SeeMore() {
           </Title>
           <Col style={{ display: "flex" }}>
             <Button
-              size={size}
+              size="large"
               style={{
                 border: "none",
                 outline: "none",

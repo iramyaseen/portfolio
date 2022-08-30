@@ -86,9 +86,7 @@ ant-menu-item:hover {
   background-color: #414141 !important;
   flex-wrap: wrap;
 }
-.main {
-  background-color: red !important;
-}
+
 .magrin {
   background-color: #414141 !important;
 }
@@ -96,7 +94,6 @@ ant-menu-item:hover {
   background-color: #414141 !important;
 }
 .responsive_prfile_iamge {
-  background-color: red !important;
   margin: 0% !important;
 }
 // Media Quary
@@ -116,9 +113,7 @@ ant-menu-item:hover {
   .responsive_text {
     margin: 0% !important;
   }
-  .responsive_prfile_iamge img {
-    // width: 100%;
-  }
+
   .textStyle {
     font-size: 50px !important;
     line-height: 65px !important;
@@ -151,6 +146,9 @@ ant-menu-item:hover {
   }
 }
 @media (max-width: 976px) {
+  .responsive_card {
+    margin-left: 20px !important;
+  }
   .block {
     display: block !important;
   }
@@ -169,6 +167,21 @@ ant-menu-item:hover {
   }
   .btn_margin {
     margin-bottom: 20px;
+  }
+  .center2,
+  .center {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .Portfolio_image {
+    margin-right: 20px;
+  }
+  .margin_top {
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+  }
+  .margin__top {
+    margin-top: 50px;
   }
 }
 @media (max-width: 678px) {
@@ -201,7 +214,6 @@ ant-menu-item:hover {
   .responsive_profile_btn,
   .responsive_main_btn {
     width: 300px !important;
-    // margin-top: 20px;
   }
   .responsive_icons {
     display: none !important;
@@ -222,65 +234,14 @@ ant-menu-item:hover {
   }
 }
 
-// @media (max-width: 325px) {
-//   .left {
-//     margin-right: 0% !important;
-//     padding-left: 60px;
-//   }
-//   .responsive_navbar {
-//     display: none;
-//   }
-//   .mobile_screen {
-//     margin: 0% auto !important;
-//   }
-//   // .responsive_prfile_iamge img {
-//   //   width: 400px !important;
-//   // }
-//   // .responsive_main_btn {
-//   //   width: 317px !important;
-//   //   font-size: 18px !important;
-//   //   display: flex !important;
-//   //   justify-content: center !important;
-//   // }
-//   // .responsive_hire_me_btn {
-//   //   width: 317px !important;
-//   // }
-//   // .responsive_profile_btn {
-//   //   width: 317px !important;
-//   // }
-//   .responsive_icons {
-//     display: none !important;
-//   }
-//   .textStyle {
-//     font-size: 45px !important;
-//     margin: 4% 40px !important;
-//   }
-//   .mobile_btn {
-//     // margin: 4% 40px !important;
-//     margin: 0% !important;
-//   }
-//   .text {
-//     font-size: 20px !important;
-//     width: 300px !important;
-//   }
-//   .center {
-//     // text-align: left !important;
-//     justify-content: flex-start !important;
-//   }
-
-//   .Portfolio_image img {
-//     width: 300px;
-//   }
-//   .see_more {
-//     text-align: center;
-//     font-size: 30px !important;
-//   }
-//   .responsive_text {
-//     margin: 0% !important;
-//     display: flex !important;
-//     flex-direction: column !important;
-//     justify-content: flex-start !important;
-//   }
-// }
-
-// // 325
+@media (max-width: 503px) {
+  .responsive_hire_me_btn,
+  .responsive_profile_btn,
+  .responsive_main_btn,
+  .responsive_hire_me_btn2 {
+    width: 257px !important;
+  }
+  .text {
+    font-size: 20px !important;
+  }
+}

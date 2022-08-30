@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import "./index.scss";
-import Footeer from "./Footer";
-import NavbarsList from "./Navbars";
+import Footeer from "./Components/Pages/FooterPage";
+import NavbarsList from "./Components/Navbars";
 import styled from "styled-components";
 const Container = styled.div``;
 
