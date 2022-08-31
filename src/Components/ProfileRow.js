@@ -22,23 +22,21 @@ const heirMeBtn = {
 };
 function ProfileRow() {
   return (
-    <div className="mobile_btn margin left">
+    <div className="mobile_btn margin left" id="profile-btns">
       <Row>
         <Col>
-          {" "}
           <Button
             size="large"
             style={heirMeBtn}
-            className="responsive_hire_me_btn"
+            className="responsive_hire_me_btn btn active"
           >
             Hire me
             <Arrow />
           </Button>
         </Col>
         <Col>
-          {" "}
           <Button
-            className="responsive_profile_btn"
+            className="responsive_profile_btn btn"
             size="large"
             style={{
               border: "none",
@@ -65,7 +63,7 @@ function ProfileRow() {
       </Row>
       <Row>
         <Button
-          className="responsive_main_btn"
+          className="responsive_main_btn btn"
           size="large"
           style={{
             border: "none",

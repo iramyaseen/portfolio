@@ -184,6 +184,9 @@ ant-menu-item:hover {
     margin-top: 50px;
   }
 }
+.active {
+  background-color: red !important;
+}
 @media (max-width: 678px) {
   .main_footer {
     margin: 0% !important;

@@ -17,6 +17,7 @@ function SeeMore() {
           marginBottom: "100px",
         }}
         className="responsive_text"
+        id="portfolio-links-container"
       >
         <Container className="margin_top">
           <Col>
@@ -40,7 +41,7 @@ function SeeMore() {
           >
             <Col>
               <Button
-                className="responsive_hire_me_btn2 btn_margin"
+                className="responsive_hire_me_btn2 btn_margin btn"
                 style={{
                   border: "none",
                   outline: "none",
@@ -66,7 +67,7 @@ function SeeMore() {
           <Container style={{ marginRight: "50px" }}>
             <Col>
               <Button
-                className="responsive_hire_me_btn2 btn_margin"
+                className="responsive_hire_me_btn2 btn_margin btn"
                 size="large"
                 style={{
                   border: "none",
@@ -92,7 +93,7 @@ function SeeMore() {
           <Container>
             <Col>
               <Button
-                className="responsive_hire_me_btn2"
+                className="responsive_hire_me_btn2 btn active"
                 size="large"
                 style={{
                   border: "none",

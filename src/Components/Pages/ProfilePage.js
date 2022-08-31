@@ -4,8 +4,12 @@ import styled from "styled-components";
 import { Col, Row, Space } from "antd";
 import ProfileCol from "../ProfileCol";
 import Descriptions from "./DescriptionPage.js";
+import { changeActiveButton } from "../../Utils/button";
 const Container = styled.div``;
+
 function Profile() {
+  window.onload = () => changeActiveButton();
+
   return (
     <Container
       style={{
@@ -22,7 +26,7 @@ function Profile() {
         <Space className="block">
           <Container>
             <Col flex={3} className="responsive_prfile_iamge">
-              <img src={image} alt="profile image" min-width="100px" />
+              <img src={image} alt="profile" min-width="100px" />
             </Col>
           </Container>
           <Container>
